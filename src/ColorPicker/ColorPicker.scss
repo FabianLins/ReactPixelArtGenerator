@@ -1,0 +1,7 @@
+.color-grid{
+    .color-pick{
+        &.active{
+            @apply outline-2 pointer-events-none cursor-default;
+        }
+    }
+}

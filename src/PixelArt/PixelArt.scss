@@ -1,0 +1,23 @@
+.grid-cols-8{
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-16{
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+}
+
+.grid-cols-32{
+    grid-template-columns: repeat(32, minmax(0, 1fr));
+}		
+
+.border{
+    border-width: 1px;
+}
+
+.border-2{
+    border-width: 2px;
+}
