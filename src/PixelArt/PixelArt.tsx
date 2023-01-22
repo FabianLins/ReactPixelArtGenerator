@@ -1,7 +1,6 @@
 import { PixelArtProps, ChosenColor, GetColorNames } from './../Helpers'
 
 const PixelArt = ({ activeColor, gridSize, gridRef, tool }: PixelArtProps) => {
-  //TODO: FIX FILL COLORS
   let fillColors: ChosenColor = { color: "", hover: "" }
 
   let borderString: string = ""

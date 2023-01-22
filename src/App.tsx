@@ -15,15 +15,6 @@ function App() {
   const [tool, setTool] = useState<Tool>(Tool.BRUSH)
   const [imageFormat, setFormat] = useState<ImageType>(ImageType.PNG)
 
-  //TODO: fix use effect
-  useEffect(() => {
-    const firstColor = document.querySelector(".color-pick.active")
-    if (firstColor) {
-      let colors: ChosenColor = { color: "", hover: "" }
-      colors = GetColorNames(firstColor.className)
-      setActiveColor(colors)
-    }
-  })
 
   const saveImage = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -89,10 +80,10 @@ function App() {
           </h3>
           <div className="flex gap-2">
             <button value={"brush"} onClick={changeTool}>
-              <img src={paintBrushIcon} alt="" className="hover:opacity-50 transition-opacity ease-in duration-75 paint-tool p-1 w-12 cursor-pointer fill-gray-300 active" />
+              <img src={paintBrushIcon} alt="" className="hover:opacity-50 transition-opacity ease-in duration-75 paint-tool p-1 w-12 cursor-pointer fill-gray-300 aspect-square active" />
             </button>
             <button value={"bucket"} onClick={changeTool}>
-              <img src={paintBucketIcon} alt="" className="hover:opacity-50 transition-opacity ease-in duration-75 paint-tool p-1  w-12 cursor-pointer fill-gray-300" />
+              <img src={paintBucketIcon} alt="" className="hover:opacity-50 transition-opacity ease-in duration-75 paint-tool p-1  w-12 cursor-pointer fill-gray-300 aspect-square" />
             </button>
           </div>
         </div>

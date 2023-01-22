@@ -1,16 +1,26 @@
 import { ChosenColor, GetColorNames, NewColorProps } from './../Helpers'
-import { useRef } from 'react'
-
+import { useEffect, useRef } from 'react'
 
 export const ColorPicker = ({ activeColor, setActiveColor }: NewColorProps) => {
   const colorPickerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const firstColor = colorPickerRef.current?.children[0]
+    firstColor?.classList.add('active')
+    if (firstColor) {
+      let colors: ChosenColor = { color: "", hover: "" }
+      colors = GetColorNames(firstColor.className)
+      setActiveColor(colors)
+    }
+  }, [])
 
   const ChooseColor = (event: React.MouseEvent<HTMLElement>) => {
     let className: string = event.currentTarget.className
     let colors: ChosenColor = { color: "", hover: "" }
     colors = GetColorNames(className)
-    let currColorPick: Element
+
     if (colorPickerRef.current) {
+      let currColorPick: Element
       for (currColorPick of Array.from(colorPickerRef.current.children)) {
         if (currColorPick.classList.contains("active")) {
           currColorPick.classList.remove("active")
@@ -27,7 +37,7 @@ export const ColorPicker = ({ activeColor, setActiveColor }: NewColorProps) => {
         Choose your color
       </h3>
       <div ref={colorPickerRef} className="color-grid grid gap-2 grid-cols-11">
-        <div onClick={ChooseColor} className="hover:outline-orange-500 hover:bg-red-300 transition-colors ease-in duration-75 active color-pick aspect-square outline outline-1 outline-gray-900 bg-red-400 cursor-pointer"></div>
+        <div onClick={ChooseColor} className="hover:outline-orange-500 hover:bg-red-300 transition-colors ease-in duration-75 color-pick aspect-square outline outline-1 outline-gray-900 bg-red-400 cursor-pointer"></div>
         <div onClick={ChooseColor} className="hover:outline-orange-500 hover:bg-purple-300 transition-colors ease-in duration-75 color-pick aspect-square outline outline-1 outline-gray-900 bg-purple-400 cursor-pointer"></div>
         <div onClick={ChooseColor} className="hover:outline-orange-500 hover:bg-green-300 transition-colors ease-in duration-75 color-pick aspect-square outline outline-1 outline-gray-900 bg-green-400 cursor-pointer"></div>
         <div onClick={ChooseColor} className="hover:outline-orange-500 hover:bg-blue-300 transition-colors ease-in duration-75 color-pick aspect-square outline outline-1 outline-gray-900 bg-blue-400 cursor-pointer"></div>
