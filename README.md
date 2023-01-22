@@ -31,6 +31,10 @@ Ich setze in meinem Projekt die folgenden 3rd Party Libraries ein:
 ## Installation / Ausführen des Projektes
 
 Um das Projekt lokal auszuführen, folgendes in der Commandline / Bash eingeben:
+
+
+```console
 $ git clone <linktorepository> lins-pixel-generator
 $ cd lins-pixel-generator
 $ npm run dev
+```
