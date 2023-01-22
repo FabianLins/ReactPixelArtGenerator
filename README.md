@@ -36,5 +36,6 @@ Um das Projekt lokal auszuführen, folgendes in der Commandline / Bash eingeben:
 ```console
 $ git clone <linktorepository> lins-pixel-generator
 $ cd lins-pixel-generator
+$ npm install
 $ npm run dev
 ```
