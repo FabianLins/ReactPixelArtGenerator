@@ -7,7 +7,7 @@
 Ich habe mich für React entschieden, da React ein modernes JavaScript Framework ist. JavaScript ist eine geeignete Sprache für ein interaktives Tool im Web-Browser. Ich habe mich für die TypeScript Variante entschieden, da TypeScript eine gute Möglichkeit ist, den Code für andere Mitarbeiter bereitzustellen. Jeder Developer schreibt “sein eigenes” Vanilla JavaScript und TypeScript ist eine Lösung, dem entgegenzuwirken. Und man kann den Code nach belieben compilen ohne ihn neu zuschreiben.
 Meine React Kenntnisse bewerte ich mit 3/5, ich habe einige Projekte erstellt und mich in die Dokumentation eingearbeitet. Mit Vanilla JavaScript bin ich gut vertraut und gebe mir eine 4/5.
 
-Ich habe SCSS genutzt, da man mit SASS mehr Möglichkeiten hat als mit Vanilla CSS. Man kann Nesting betreiben bei der rgba(…) Funktion einen Hexwert statt RGB Werte eintragen und es bietet viele weitere Vorteile. Mit (S)CSS bin ich sehr gut vertraut und gebe mir eine 5/5.
+Ich habe SCSS genutzt, da man mit SASS mehr Möglichkeiten hat als mit Vanilla CSS. Man kann Nesting betreiben, bei der rgba(…) Funktion einen Hexwert statt RGB Werte eintragen und es bietet viele weitere Vorteile. Mit (S)CSS bin ich sehr gut vertraut und gebe mir eine 5/5.
 Ich habe TailwindCSS als Framework benutzt, da dieses Framework eine gute Möglichkeit bietet, frei CSS zu schreiben ohne Vanilla (S)CSS zu nutzen, aber trotzdem die Vorteile eines Frameworks hat. Das heisst, dass man sich nicht um eine normalize.css Datei und ähnliches kümmern muss. 
 
 ## Eingesetzte 3rd Party Libraries
