@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { ChosenColor, GetColorNames, GridProps } from './Helpers'
 
 const GridSize = ({ setGridSize, gridRef }: GridProps) => {
@@ -43,7 +43,7 @@ const GridSize = ({ setGridSize, gridRef }: GridProps) => {
         Choose Grid Size
       </h3>
       <form className="reset-grid flex gap-3" onSubmit={resetGrid}>
-        <select name="grid_size" onChange={(e) => setGridSelect(e.target.value)} className="px-4 py-2 outline outline-1 outline-gray-300 border-r-8 border-transparent text-center text-gray-500">
+        <select name="grid_size" onChange={(e) => setGridSelect(e.target.value)} className="hover:border-gray-200 transition-all ease-in pl-4 pr-5 py-2 border border-gray-300 text-center text-gray-500">
           <option value="8x8">8x8</option>
           <option value="12x12">12x12</option>
           <option value="16x16">16x16</option>
