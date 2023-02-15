@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import './App.scss'
 import html2canvas from 'html2canvas'
-import { ChosenColor, GetColorNames, ImageType, Tool } from './Helpers'
+import { ChosenColor, ImageType, Tool } from './Helpers'
 import { ColorPicker } from './ColorPicker/ColorPicker'
 import PixelArt from './PixelArt/PixelArt'
 import GridSize from './GridSize'
@@ -98,7 +98,7 @@ function App() {
         setTool={setTool}
       />
       <form className="save-image-container gap-3 flex mt-3" onSubmit={saveImage}>
-        <select name="" onChange={selectFormat} id="" className="px-3 py-2 outline outline-1 outline-gray-300 border-r-8 border-transparent text-center text-gray-500">
+        <select name="" onChange={selectFormat} className="hover:border-gray-200 transition-all ease-in pl-4 pr-5 py-2 border border-gray-300 text-center text-gray-500">
           <option value="PNG">PNG</option>
           <option value="JPG">JPG</option>
           <option value="GIF">GIF</option>

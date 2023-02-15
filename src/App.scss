@@ -5,12 +5,19 @@
 @import 'ColorPicker/ColorPicker.scss';
 @import 'PixelArt/PixelArt.scss';
 
-input{
+select {
+    @apply appearance-none bg-no-repeat;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%236B7280' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-position-y: 9px;
+    background-position-x: 100%;
+}
+
+input {
     @apply appearance-none;
 }
 
-.paint-tool{
-    &.active{
+.paint-tool {
+    &.active {
         @apply outline outline-2 outline-gray-700 pointer-events-none cursor-default;
     }
 }
