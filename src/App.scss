@@ -5,6 +5,10 @@
 @import 'ColorPicker/ColorPicker.scss';
 @import 'PixelArt/PixelArt.scss';
 
+input{
+    @apply appearance-none;
+}
+
 .paint-tool{
     &.active{
         @apply outline outline-2 outline-gray-700 pointer-events-none cursor-default;
